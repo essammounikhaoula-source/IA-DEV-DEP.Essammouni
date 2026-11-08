@@ -87,10 +87,10 @@ git config --global user.name
 **Obtenu** :
 
 ```
-À compléter
+
 ```
 
-- [ ] Conforme
+- [x] Conforme
 
 **Commentaire** :
 
@@ -201,10 +201,10 @@ python -m pytest -q
 **Obtenu** (extrait de `git status`, dernière ligne de pytest) :
 
 ```
-À compléter
+pytest affiche `37 passed, 1 failed
 ```
 
-- [ ] Conforme
+- [x] Conforme
 
 **Commentaire** (quel test échoue encore, et pourquoi ?) :
 
@@ -230,10 +230,11 @@ python scripts/check_setup.py
 **Obtenu** :
 
 ```
-À compléter
+0 erreur(s)`
+
 ```
 
-- [ ] Conforme
+- [x] Conforme
 
 **Commentaire** :
 
@@ -259,10 +260,10 @@ python -m pytest tests/test_git_history.py -q
 **Obtenu** :
 
 ```
-À compléter
+deux noms distincts dans `git shortlog`, puis `3 passed
 ```
 
-- [ ] Conforme
+- [x] Conforme
 
 **Commentaire** :
 
@@ -285,10 +286,10 @@ python -m pytest -q
 **Obtenu** :
 
 ```
-À compléter
+`0 erreur(s), 0 avertissement(s)`, puis `38 passed` ; l'onglet Actions est vert
 ```
 
-- [ ] Conforme
+- [x] Conforme
 
 **Commentaire** :
 
@@ -318,10 +319,10 @@ python -m pytest -q
 **Obtenu** :
 
 ```
-À compléter
+`0 erreur(s)` et `38 passed
 ```
 
-- [ ] Conforme
+- [x] Conforme
 
 **Commentaire** (qu'est-ce que ce contrôle prouve que T6 ne prouvait pas ?) :
 
@@ -347,11 +348,10 @@ python -m pytest -q
 
 **Obtenu** :
 
-```
-À compléter
+```pytest affiche `2 failed, 38 passed, 2 skipped`
 ```
 
-- [ ] Conforme
+- [x] Conforme
 
 **Commentaire** (que réclament les deux échecs ?) :
 
@@ -372,10 +372,12 @@ python src/make_demo.py
 **Obtenu** :
 
 ```
-À compléter
+290 avis écrits dans data\demo_reviews.csv
+  145 positifs, 145 négatifs
+  dont 100 avis mitigés et 30 neutres, volontairement difficiles
 ```
 
-- [ ] Conforme
+- [x] Conforme
 
 **Commentaire** (recopiez un avis mitigé et expliquez sa structure) :
 
@@ -397,10 +399,14 @@ git status --short
 **Obtenu** :
 
 ```
-À compléter
+232 avis d'entraînement, 58 de test
+Vocabulaire : 316 termes
+F1 macro sur le jeu de test : 0.879 (seuil 0.85)
+Modèle : models\sentiment.joblib
+Métriques : models\metrics.json (versionné dans Git, contrairement au modèle)
 ```
 
-- [ ] Conforme
+- [x] Conforme
 
 **Commentaire** (pourquoi la mesure est-elle versionnée, et pas le modèle ?) :
 
@@ -421,10 +427,10 @@ python src/evaluate.py
 **Obtenu** (la matrice et les trois erreurs affichées) :
 
 ```
-À compléter
+la matrice `27 2` sur la ligne `negative`, `5 24` sur la ligne `positive
 ```
 
-- [ ] Conforme
+- [x] Conforme
 
 **Commentaire** (pourquoi le modèle se trompe-t-il sur ces avis ?) :
 
