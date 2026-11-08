@@ -71,5 +71,5 @@ sentiment-app/
 
 | Rôle | Nom | Identifiant GitHub | Travail de la semaine 1 |
 | --- | --- | --- | --- |
-| Membre A | [Nom 1] | [@login] | |
+| Membre A |  Khaoula Essammouni| essammounikhaoula@gmail.com | |
 | Membre B | Khaoula Essammouni (membre B) | khaoulaessammouni04@gmail.com | |
