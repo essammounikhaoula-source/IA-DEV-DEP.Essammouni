@@ -455,10 +455,15 @@ git push
 **Obtenu** :
 
 ```
-À compléter
+Source : allocine, 20000 avis (10204 négatifs)
+16000 avis d'entraînement, 4000 de test
+Vocabulaire : 149529 termes
+F1 macro sur le jeu de test : 0.920 (seuil 0.85)
+Modèle : models\sentiment.joblib
+Métriques : models\metrics.json (versionné dans Git, contrairement au modèle)
 ```
 
-- [ ] Conforme
+- [x] Conforme
 
 **Commentaire** (pourquoi le F1 est-il meilleur sur Allociné ?) :
 
@@ -482,7 +487,7 @@ python -m pytest -q
 **Obtenu** :
 
 ```
-À compléter
+42 passed`
 ```
 
 - [ ] Conforme
@@ -492,6 +497,7 @@ python -m pytest -q
 > Les résultats attendus de chaque contrôle, les sept erreurs du jeu de démonstration, un exemple de `docs/semaine2.md` et la fin du TP2 (push, CI, part du membre B) sont détaillés dans l'**annexe B**, à la fin de ce journal. Le script d'entraînement, `src/train.py`, est expliqué pas à pas dans l'**annexe C**.
 
 ---
+
 
 ## TP3 : exposer le modèle par une API
 
@@ -512,7 +518,7 @@ python -m pytest -q
 **Obtenu** :
 
 ```
-À compléter
+pytest affiche 45 passed
 ```
 
 - [ ] Conforme
@@ -538,10 +544,10 @@ Puis, dans `http://localhost:8000/docs` : `GET /health`, « Try it out », « Ex
 **Obtenu** :
 
 ```
-À compléter
+`200`, `"status": "OK"`, `"model": "tfidf-logreg (TP2, models/sentiment.joblib)"
 ```
 
-- [ ] Conforme
+- [x] Conforme
 
 **Commentaire** :
 
@@ -558,10 +564,10 @@ Puis, dans `http://localhost:8000/docs` : `GET /health`, « Try it out », « Ex
 **Obtenu** :
 
 ```
-À compléter
+200`, `"label": "POSITIVE"`, `"score": 0.777`
 ```
 
-- [ ] Conforme
+- [x] Conforme
 
 **Commentaire** :
 
@@ -585,11 +591,10 @@ python -c "import httpx; r = httpx.post('http://127.0.0.1:8000/predict', json={'
 
 **Obtenu** :
 
-```
-À compléter
+```200`, `"label": "NEGATIVE"`, `"score": 0.7465`
 ```
 
-- [ ] Conforme
+- [x] Conforme
 
 **Commentaire** :
 
